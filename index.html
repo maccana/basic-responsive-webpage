@@ -1,9 +1,103 @@
-<!DOCTYPE>
-<html>
-		<head>
-			<title>Responsive page template</title>
-		</head>
-		<body>
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Basic Responsive Website</title>
+
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+  <![endif]-->
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+	<div class="row">
+		<div class="twelve columns">
+		<img id='header-image' src="img/spkr.jpg" align="left" />
+		<p align="center"><h2>Music and Technology in the 21st Century</h2></p>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="twelve columns">
+			<ul class="nav-bar">
+ 		 		<li class="active"><a href="#">Home</a></li>
+  				<li><a href="#">Tutorials</a></li>
+  				<li><a href="#">Inspiration</a></li>
+  				<li><a href="#">About</a></li>
+			</ul>
+			
+		</div>
+	</div>
+	
+	<!-- don't mind this script, I just added them for fun! -->
+	<script charset="ISO-8859-1" src="http://fast.wistia.com/static/popover-v1.js"></script>
+	
+	<div class="row">
+		<div class="twelve columns">
+			<div class="row">
+				<div class="eight columns" style="background-color:#fff">
+					<h3>Introduction </h3>
+					<p>120 years of technology and cool sounds</p>
+					<hr>
+					<div id='keys-image' class="twelve columns" style='text-align:center;border:0px solid red;'>
+						<img src="img/oldkeys.gif" />
+					</div>
+					<p>
+					Ever since the earliest rhythms, music has enjoyed a synchronous
+					relationship with technology. For the most part musical innovation has
+					relied largely upon the technological developments of
+					the day. The annals of music history are overflowing with
+					musical artists, producers and engineers <SPAN STYLE="font-weight: normal">who</SPAN>
+					utilized the technology available to them, in sometimes unorthodox
+					ways, to create new forms of expression and drive innovation in the artform. Whether it be the invention
+					of an instrument, a new recording medium or medium of
+					distribution the symbiotic ebb and flow between music and
+					technology has always been a key ingredient in the fertive 
+					development of both.
+					
+					</p>				
+				</div>
 		
-		</body>
-		</html>		
+				<div class="four columns">
+					<h4>Cool music tech links</h4>
+					
+					<!-- don't mind these, I just added them for fun! -->
+					
+					<a href=""><img src="img/pd-illustration.jpg" width="80%" height="80%" alt="Check out the amazing free music programming software Pure Data" /></a>
+					
+					<br />
+					<hr />
+					<img src="img/ad-banner.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="twelve columns">
+		<hr />
+		<p align="left">©2013 Cool Comapny. Design by maccana web.</p>
+		</div>
+	</div>
+</body>
