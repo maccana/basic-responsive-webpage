@@ -15,7 +15,7 @@
 
   <!-- Included CSS Files -->
   <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/app.css">
 
 
@@ -33,74 +33,82 @@
 </head>
 
 <body>
-
-	<div class="row" style="margin-top:20px">
+	<!-- header -->
+	<div class="row page-top">
 		<div class="twelve columns">
-		<img id='header-image' src="img/spkr.jpg" align="left" style="margin-left:-4px;margin-right:50px" />
-		<p align="center" style="margin-top:40px;background-color:#fff;"><h2>Music and Technology in the 21st Century</h2></p>
+			<div id="head-logo">
+				<img id="header-image" src="img/spkr.jpg">
+			</div>
+			<p>
+				<h2>Music and Technology in the 21st Century</h2>
+			</p>
 		</div>
 	</div>
-	
-	<div class="row">
-		<div class="twelve columns" style="border:0px solid red;">
-			<ul class="nav-bar">
- 		 		<li class="active"><a href="#">Home</a></li>
-  				<li><a href="#">Tutorials</a></li>
-  				<li><a href="#">Inspiration</a></li>
-  				<li><a href="#">About</a></li>
-			</ul>
-			
+	<!-- navigation -->
+	<div class="row nav">
+		<div class="twelve columns">
+			<div class="">
+				<ul class="nav-bar">
+	 		 		<li class="active"><a href="#">Home</a></li>
+	  				<li><a href="#">Tutorials</a></li>
+	  				<li><a href="#">Inspiration</a></li>
+	  				<li><a href="#">About</a></li>
+				</ul>	
+			</div>	
 		</div>
 	</div>
 		
-	<div class="row">
-		<div class="twelve columns" style="border:0px solid red;">
-			<div class="row">
-				<div class="eight columns">
-					<div style="background-color:#fff;padding:20px;width:100%">
-						<h3>Introduction </h3>
-						<h4>120 years of technology and cool sounds</h4>
-						<hr>
-						<div id='keys-image' class="twelve columns" style='text-align:center;border:0px solid red;'>
+	<div class="row main">
+		<div class="twelve columns">
+			<div class="nine columns">
+				<div id="main-content">
+					<article>
+						<div class="header">
+							<h2>Introduction </h2>
+							<h4 id="sub-header">120 years of technology and cool sounds</h4>
+						</div>
+	
+						<div id="keys-image" class="twelve columns">
 							<img src="img/oldkeys.gif" />
 						</div>
 						<p>
-						Ever since the earliest rhythms, music has enjoyed a synchronous
-						relationship with technology. For the most part musical innovation has
-						relied largely upon the technological developments of
-						the day. The annals of music history are overflowing with
-						musical artists, producers and engineers <SPAN STYLE="font-weight: normal">who</SPAN>
-						utilized the technology available to them, in sometimes unorthodox
-						ways, to create new forms of expression and drive innovation in the artform. Whether it be the invention
-						of an instrument, a new recording medium or medium of
-						distribution the symbiotic ebb and flow between music and
-						technology has always been a key ingredient in the fertive 
-						development of both.
-						
+							Ever since the earliest rhythms, music has enjoyed a synchronous
+							relationship with technology. For the most part musical innovation has
+							relied largely upon the technological developments of
+							the day. The annals of music history are overflowing with
+							musical artists, producers and engineers who
+							utilized the technology available to them, in sometimes unorthodox
+							ways, to create new forms of expression and drive innovation in the artform. Whether it be the invention
+							of an instrument, a new recording medium or medium of
+							distribution the symbiotic ebb and flow between music and
+							technology has always been a key ingredient in the fertive 
+							development of both.
 						</p>	
-
+					</article>
+				</div>			
+			</div>
+			<!-- aside --> 
+			<div class="three columns right">
+				<div class="aside-item">
+					<div class="header">
+						<h5>Cool music tech links</h5>
 					</div>			
-				</div>
-		
-				<div class="four columns">
-					<div style="background-color:#fff;padding:15px;">
-						<h4>Cool music tech links</h4>
-						<hr>
-						<div style="text-align:center">
-							<a href=""><img src="img/pd-illustration.jpg" width="80%" height="80%" alt="Check out the amazing free music programming software Pure Data" />
-							</a>
-							<br />
-							<hr />
-							<img src="img/ad-banner.png" />	
-						</div>
-
-
+					<div>
+						<a href="">
+							<img src="img/pd-illustration.jpg" alt="Check out the amazing free music programming software Pure Data" />
+						</a>	
 					</div>
-				
+				</div>
+
+				<div class="aside-item">
+					<div class="header">
+						<h5>More cool stuff</h5>
+					</div>	
+					<img src="img/ad-banner.png" />	
 				</div>
 			</div>
 		</div>
-	</div>
+	</div><!-- end main row -->
 	<div class="row">
 		<div class="twelve columns">
 		<hr />
