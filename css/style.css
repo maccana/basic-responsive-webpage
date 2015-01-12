@@ -1,0 +1,50 @@
+.nav {
+	border:0px solid red;
+}
+.page-top {
+	border: 0px solid blue;
+	margin-top:20px;
+}
+.page-top p
+{
+	margin-top:0px;
+}
+#head-logo {
+	margin-left:0px;margin-right:20px;float:left;
+	border: 0px solid red;
+}
+.main {
+	border: 0px solid red;
+}
+
+#sub-header {font-weight: 200;}
+#keys-image {
+	text-align:center;
+}
+#main-content {
+	background-color:#fff;padding:20px;
+}
+#main-content article .header {
+	border: 0px solid red;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #ddd;
+}
+#main-content article .header h2 {color:#525252;}
+.right {
+	background-color: ;
+	border: 0px solid red;
+}
+.aside-item {
+	border: 0px solid red;
+	margin-bottom: 20px;
+	text-align: left;
+}
+.aside-item .header {
+	border-bottom: 1px solid #ddd;
+}
+.aside-item img {
+	text-align: center;
+}
+.aside-item .header {
+	margin-bottom: 10px;
+}
