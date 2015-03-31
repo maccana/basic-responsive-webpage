@@ -7,9 +7,10 @@
 	box-sizing:border-box;
 	border:1px dashed #000;
 }
-/******************/
 
-.header#site {
+/* end testing */
+
+header#site-header {
 	margin-bottom:20px;
 	padding:20px;
 }
@@ -74,4 +75,6 @@
 }
 .bggrey {
 	background-color:grey;
+	opacity:.6;
 }
+.bgwhite { background-color:#f7f7f7;}
