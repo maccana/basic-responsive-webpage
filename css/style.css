@@ -1,3 +1,19 @@
+/* for testing */
+.columns {
+	min-height:100px;
+}
+
+*:not(body):not(html) {
+	box-sizing:border-box;
+	border:1px dashed #000;
+}
+/******************/
+
+.header#site {
+	margin-bottom:20px;
+	padding:20px;
+}
+
 .nav {
 	border:0px solid red;
 }
@@ -10,7 +26,9 @@
 	margin-top:0px;
 }
 #head-logo {
-	margin-left:0px;margin-right:20px;float:left;
+	margin-left:0px;
+	margin-right:20px;
+	float:left;
 	border: 0px solid red;
 }
 .main {
@@ -47,4 +65,13 @@
 }
 .aside-item .header {
 	margin-bottom: 10px;
+}
+
+/* dev helper classes */
+.bdred {
+	border:1px solid red;
+	
+}
+.bggrey {
+	background-color:grey;
 }
