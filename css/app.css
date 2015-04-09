@@ -23,6 +23,15 @@
 
 
 /* -----------------------------------------
-   Page Name 2
+   f5GridGuide.html
 ----------------------------------------- */
+#wrapper { border:0px solid red; }
+.row { margin-bottom:30px; }
+.four, .three, .six { border-right: 1px solid #e7e7e7;text-align:center; }
+.four:last-child, .three:last-child, .six:last-child { border-right: none; }
+.heading { font-family:georgia; font-weight:200; color:#e7e7e9; }
+.article-heading { color:#919191; font-weight:100; }
+.text { text-align:justify; }
+.feat-img { width:100%; max-height:146px;overflow:hidden; }
+img { max-width:100%; max-height:auto; }
 
