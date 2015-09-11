@@ -9,15 +9,17 @@
 }
 
 .row { /*background-color: rgba(181, 194, 179, 0.33);*/ }
+
 /* end testing */
 
 .wrapper { border:1px solid rgb(197, 187, 187, 0.38); width:80%; margin: auto; margin-top:50px; background-color:#fff; }
 
-.bg-header { min-height: 296px; position:absolute; background-color:grey; 
+.bg-header { 
+	min-height: 296px; position:absolute; background-color:grey; 
 	background-image: url("http://netdna.webdesignerdepot.com/uploads/2013/06/featured48@wdd2x.jpg");
 	background-size:cover;
-	width:100%;z-index:-10; }
-
+	width:100%;z-index:-10; 
+}
 
 header#site-header { padding:20px; }
 
