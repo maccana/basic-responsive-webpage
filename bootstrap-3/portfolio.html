@@ -64,8 +64,9 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse navbar-ex1-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li>
+				<li class="active"><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>
@@ -74,14 +75,14 @@
 		<div class="container text-center">
 		  <h2>Welcome to My Portfolio Site</h2>
 			<p>Feel free to browse around. If you see something you like why not...</p>
-			<p><a class="btn btn-success btn-lg" href="#" role="button">Hire Me</a></p>
+			<p><a class="btn btn-success btn-lg" href="#contact" role="button">Hire Me</a></p>
 			<p>for your next project.</p>
 		</div>
 	</section>
 	<!-- About Section -->
 	<section id="about" class"about">
 		<div class="container">
-			<h2 class="text-center">Services</h2>
+			<h2 class="text-center">About</h2>
 			<hr class="small-hr">
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -176,5 +177,21 @@
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<!-- Bootstrap JavaScript -->
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script>
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
 	</body>
 </html>
