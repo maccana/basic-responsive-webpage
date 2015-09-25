@@ -1,0 +1,34 @@
+body {
+	background-color: #DCDBD9;
+	color: #2C2C2C;
+	font: normal 100% Cambria, Georgia, Serif;
+}
+#page { width: 80%;margin:80px auto; }
+h1 { 
+	font-size: 1.5em;  /* 24 / 16 (target / context) */
+	font-style: italic; 
+	font-weight: normal; }
+h1 a { 
+	color: #747474; 
+	font: bold 0.4583333333333333em Calibri, Optima, 
+	Arial, sans-serif; /* 11 / 24  (24 is new context size based on em setting of h1 above) */
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+h1 a:hover { 
+	color:green; 
+
+}
+.box {
+	width:100px;
+	height: 100px;
+	background-color: black;
+	-webkit-transition: background-color 0.3s ease;
+	-moz-transition: background-0color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
+}
+.box:hover {
+	background-color: green;
+}
