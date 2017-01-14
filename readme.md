@@ -1,2 +1,5 @@
-Responsive web design project to build out reusable responsive pages and components for bootstrapping new projects.
-Built using Zurb Foundation 5.
+Responsive pages / elements for use in new projects.
+
+Tech used:
+- Zurb Foundation 5.
+- Bootstrap
