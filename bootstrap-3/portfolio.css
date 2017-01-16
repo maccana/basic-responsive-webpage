@@ -86,7 +86,8 @@ section {
 /* Contact Form */
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-#contact{ background:url(http://cdn.bigbangfish.com/city/213330-quebec-city.jpg) no-repeat;
+#contact{
+  background:url('https://source.unsplash.com/random') no-repeat;
   background-size: cover;
   height:100%;
 }
@@ -205,11 +206,11 @@ input:focus, textarea:focus {
 	background-color: rgba(0,0,0,0);
 	color: #0493bd;
 }
-	
+
 .submit:hover {
 	color: #3498db;
 }
-	
+
 .ease {
 	width: 0px;
 	height: 74px;
