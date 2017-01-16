@@ -20,23 +20,23 @@ section {
     margin-bottom: 30px;
 }
 #portfolio .caption {
-    background-color: #ddd;
+    background-color: #f3f3f3;
     margin-top: -20px;
     padding: 10px;
 }
 #about {
-    background-color: #337ab7;
+    background-color: rgba(73, 120, 160, 0.91);
     color: #fff;
 }
 #about a {
     color: rgb(182, 216, 154);
 }
 #footer {
-    background-color: rgba(5, 12, 37, 0.9);
-    color: rgba(138, 126, 146, 0.98);
+    background-color: rgba(224, 224, 224, 0.33);
+    color: rgba(92, 57, 115, 0.95);
 }
 #contact {
-    background-color: #515982;
+    background-color: rgba(33, 10, 84, 0.88);
     color: #E7E7E7;
 }
 /* Social Media Buttons */
@@ -87,7 +87,7 @@ section {
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 #contact{
-  background:url('https://source.unsplash.com/random') no-repeat;
+  /*background:url('https://source.unsplash.com/random') no-repeat;*/
   background-size: cover;
   height:100%;
 }
