@@ -5,50 +5,92 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Flexbox Holy Grail Layout</title>
   <style>
-  html, body {
-    height: 100%;
-    font-family: monospace;
-  }
-  header { padding: 10px; ;height: 100px; border-bottom: 2px solid #eee;text-align: center; }
+    body {
+    	height: 100%;
+    	font-family: monospace;
+    	background-color: rgba(0, 191, 255, 0.45);
+    	height: 100vh;
+    	margin: 0px auto;
+    	padding: 0px;
+    }
 
-  .container {
-    display: flex;
-    width:80%;
-    margin:40px auto 0px auto;
-    -webkit-flex: colum;
-    -ms-flex: colum;
-    flex: colum;
-    min-height: 100vh;
-  }
-  .main {
-    background: #61d49c;
-    flex: 1;
-    min-height: 100vh;
-  }
+    /* HEADER SECTION */
 
-  /* MAIN SECTION */
-  .articles-wrap { padding: 1px; background-color:rgba(103, 132, 202, 0.54); }
-  article { background-color: rgba(255, 255, 255, 0.87); margin:20px;padding:5px 20px; }
-  nav, aside { flex: 0 0 12em; min-height: 100vh; }
+    header {
+    	padding: 10px;
+    	height: 100px;
+    	border-bottom: 2px solid #eee;
+    	text-align: center;
+    }
+    .container {
+    	display: flex;
+    	width: 80%;
+    	margin: 40px auto 0px auto;
+    	-webkit-flex: colum;
+    	-ms-flex: colum;
+    	flex: colum;
+    	min-height: 100vh;
+    }
 
-  /* LEFT NAV SECTION */
-  nav {
-    background: #eee;
-    order: -1;
-  }
+    /* MAIN SECTION */
 
-  /* ASIDE SECTION */
-  aside { background-color: rgba(238, 130, 238, 0.38); }
-  aside { padding: 10px; }
-  #ad-wrap { background-color: #fdfdfd; }
-  .ad { margin-top: 10px; margin-bottom: 10px; }
+    .main {
+    	background: #61d49c;
+    	flex: 1;
+    	min-height: 100vh;
+    }
+    .articles-wrap {
+    	padding: 1px;
+    	background-color: rgba(103, 132, 202, 0.54);
+    }
+    article {
+    	background-color: rgba(255, 255, 255, 0.87);
+    	margin: 20px;
+    	padding: 5px 20px;
+    }
+    nav, aside {
+    	flex: 0 0 12em;
+    	min-height: 100vh;
+    }
 
-  .footer { background-color: #90a9ca;width:80%;margin:0px auto 40px auto; }
+    /* LEFT NAV SECTION */
+
+    nav {
+    	background: #eee;
+    	order: -1;
+    	padding: 10px;
+    }
+
+    /* ASIDE SECTION */
+
+    aside {
+    	background-color: rgba(238, 130, 238, 0.38);
+    }
+    aside {
+    	padding: 10px;
+    }
+    #ad-wrap {
+    	background-color: #fdfdfd;
+    }
+    .ad {
+    	margin-top: 10px;
+    	margin-bottom: 10px;
+    }
+
+    /* FOOTER SECTION */
+    .footer {
+    	background-color: #90a9ca;
+    	width: 80%;
+    	margin: 0px auto 40px auto;
+    	height: 60px;
+    }
   </style>
 </head>
 <body>
   <header>header section
     <h1>Holy Grail Layout Using Flexbox</h1>
+    <span>Toggle Layout </span>
+    <input id="layout-toggle" type="checkbox" onclick="toggle()">
   </header>
   <div class="container">
     <div class="main">
@@ -107,8 +149,37 @@
       </div>
     </aside>
   </div>
-  <div class="footer">
+  <div class="footer" id="footer">
       Footer Content
   </div>
 </body>
+<script>
+
+  var layoutToggle = document.getElementById('layout-toggle'),
+      contEl       = document.getElementsByClassName('container')[0],
+      footEl       = document.getElementsByClassName('footer')[0],
+      layoutToggle = false;
+
+  function toggle() {
+    if(!layoutToggle) {
+      layoutToggle = true;
+      console.log('turned on', layoutToggle);
+
+      contEl.style.width = 100 + '%';
+      contEl.style.marginTop = 0 + 'px';
+      footEl.style.width = 100 + '%';
+      footEl.style.marginBottom = 0 + 'px';
+    }
+    else {
+      layoutToggle = false;
+      console.log('turned off', layoutToggle);
+      contEl.style.width = 80 +'%';
+      contEl.style.marginTop = 40 + 'px';
+      footEl.style.width = 80 + '%';
+      footEl.style.marginBottom = 40 + 'px';
+    }
+
+  }
+
+</script>
 </html>
