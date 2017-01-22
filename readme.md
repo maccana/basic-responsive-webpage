@@ -1,5 +1,5 @@
 Responsive pages / elements for use in new projects.
 
-Tech used:
+Technologies / Frameworks used:
 - Zurb Foundation 5
 - Bootstrap
