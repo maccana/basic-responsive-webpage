@@ -1,0 +1,104 @@
+body {
+  /*height: 100%;*/
+  font-family: sans-serif;
+  background-color: rgba(0, 191, 255, 0.45);
+  height: 100vh;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+/* HEADER SECTION */
+header {
+  padding: 33px;
+  height: 100px;
+  border-bottom: 2px solid #eee;
+  text-align: center;
+}
+.container {
+  display: flex;
+  width: 90%;
+  margin: 40px auto 0px auto;
+  -webkit-flex: column;
+  -ms-flex: column;
+  flex: column;
+  min-height: 100vh;
+
+}
+
+/* MAIN SECTION */
+.main {
+  background: lightblue;
+  flex: 1;
+  min-height: 100vh;
+}
+.articles-wrap {
+  padding: 1px;
+  background-color: rgba(103, 132, 202, 0.54);
+}
+article {
+  background-color: rgba(255, 255, 255, 0.87);
+  margin: 20px;
+  padding: 5px 20px;
+}
+nav, aside {
+  flex: 0 0 10em;
+  min-height: 100vh;
+}
+
+/* LEFT NAV SECTION */
+nav {
+  background: #eee;
+  order: -1;
+  padding: 10px;
+}
+
+/* ASIDE SECTION */
+aside {
+  background-color: rgba(238, 130, 238, 0.38);
+  padding: 10px;
+
+}
+
+#aside-wrap {
+  background-color: #fdfdfd;
+  flex: 1;
+}
+.aside-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* FOOTER SECTION */
+.footer {
+  background-color: #90a9ca;
+  width: 90%;
+  margin: 0px auto 40px auto;
+  height: 60px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+/* Styles */
+
+  header { height:auto;padding:20px; }
+  .container {
+    display: block;
+    width: 100%;
+  }
+  nav {
+    min-height: 50px;
+    max-height: 50px;
+    /*text-align: center;*/
+  }
+  aside { min-height: auto; max-height: auto; }
+  nav ul li { display: inline-block; }
+  .footer { width: 100% }
+  .footer, .container { margin: 0px auto; }
+  .articles-wrap { padding:0px; background-color:transparent; }
+  article { text-align: left;padding:1px; }
+  article h2 { font-size: 30px; text-align: center; }
+  article p { font-size: 16px;text-align: left;}
+
+
+  }
+}
