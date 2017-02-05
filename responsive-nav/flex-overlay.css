@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #67a0da;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+.page-wrap {
+  display: flex;
+  flex-direction: column; /* Outer-most page continer usually column */
+  min-width: 80%;
+  max-width: 100%;
+  min-height: 100vh;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+#open-icon {
+  position: absolute;
+  top: 6;
+  right: 8;
+  color: #fff;
+  transition: .8s;
+}
+#open-icon a, #close-icon a {
+  color: #fff;
+  /*font-size: 30px;*/
+  transition: 0.8s;
+}
+a {
+  text-decoration: none;
+}
+#overlay-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width : 0%;
+  background-color: rgba(0,0,0,0.6);
+  transition: 0.5s;
+  /*border-left: 1px solid #888;*/
+}
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  margin: 0px auto;
+  transition: 0.5s;
+}
+#overlay-wrap #close-icon {
+  /*position: absolute;
+  right: 22;
+  top: 5;*/
+  text-align: right;
+  margin-right: 16px;
+  margin-top: 9px;
+  opacity: 0;
+  /*display: none;*/
+  color: #fff;
+  transition: 0.9s;
+}
+.fa-times {
+  font-size: 36px;
+
+}
+.overlay-content .menu {
+  margin-top: 40px;
+}
+.item {
+  display: flex;
+  min-height:50px;
+  width: 100%;
+  border-bottom: 1px solid #616263;
+  justify-content: center;
+  /*align-items: center;*/
+  transition: 1s;
+}
+.item a {
+  color: #c3c3c3;
+  font-size: 26px;
+  font-family: sans-serif;
+  padding: 20px 0px 20px 0px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: 0.5s;
+  white-space:nowrap;
+
+}
+.item a:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Optional Breakpoint For Larger Screens */
+/*@media (max-width: 800px) {
+
+}*/
