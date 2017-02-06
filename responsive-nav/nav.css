@@ -4,7 +4,7 @@ body {
     font-family: sans-serif;
 }
 header {
-    background-color: rgba(57, 60, 105, 0.87);
+    background-color: rgba(77, 85, 191, 0.91);
     max-width: 100%;
     padding: 0px 0px 0px 0px;
     color: #fff;
@@ -35,7 +35,7 @@ nav {
     width: 100%;
 }
 nav ul {
-    background-color: rgba(163, 168, 210, 0.73);
+    background-color: rgba(95, 98, 228, 0.77);
     overflow: hidden;
     color: #fff;
     padding: 0;
@@ -110,15 +110,23 @@ img.center {
         width: 100%;
         padding: 20px;
         text-align: center;
+        color: rgba(40, 43, 86, 0.65);
+    }
+    nav ul li a {
+      font-size: larger;
+      color: #fff;
     }
     .header-text h1 { margin: 0 0px 20px; }
     .handle {
         display: block;
         cursor: pointer;
     }
+    .fa-bars {
+        margin-right: 10px;
+    }
     section { padding: 5%; }
     .main {
-      width: 100%;
+        width: 100%;
     }
     img.center { margin: 15px auto; }
 
