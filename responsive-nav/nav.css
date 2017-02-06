@@ -101,6 +101,11 @@ img.center {
     nav { order: 0; }
     nav ul {
         max-height: 0;
+        transition: .8s;
+    }
+    .fa-bars {
+      margin-right: 10px;
+      margin-top: 5px;
     }
     .showing {
         max-height: 30em;
@@ -110,6 +115,12 @@ img.center {
         width: 100%;
         padding: 20px;
         text-align: center;
+        background-color: #818181;
+        border-bottom: 1px solid #f7f7f7;
+
+    }
+    nav ul li a {
+      font-size: 20px;
     }
     .header-text h1 { margin: 0 0px 20px; }
     .handle {

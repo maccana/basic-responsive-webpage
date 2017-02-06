@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-<header>
-  <div class="handle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
   <nav>
     <ul>
         <li><a href="#">Home</a></li>
@@ -22,8 +20,11 @@
         <li><a href="#">Shop</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="#">Contact</a></li>
-    </ul>  
+    </ul>
   </nav>
+<header>
+  <div class="handle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+
   <div class="header-text">
     <h1>Responsive Nav Demo</h1>
   </div>
@@ -44,7 +45,7 @@
   <script>
     // Toggle mobile menu
     $('.handle').on('click', function() {
-      $('nav ul').toggleClass('showing');
+      $('nav ul').toggleClass('showing', 1000);
     });
   </script>
 </body>
