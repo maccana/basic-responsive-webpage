@@ -30,7 +30,7 @@ a {
 nav {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    /*flex: 1;*/
     order: 2;
     width: 100%;
 }
